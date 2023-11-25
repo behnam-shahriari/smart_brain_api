@@ -87,12 +87,3 @@ app.post("/image", (req, res) => {
 app.listen(3000, () => {
   console.log("App is running on port 3000");
 });
-
-/*
-    / --> res = this is working
-    / Signin --> POST = Success/Fail
-    / Register --> POST = user
-    / Profile/:userId --> GET = user
-    /Image --> PUT --> user
-
-*/
