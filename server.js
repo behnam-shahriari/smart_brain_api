@@ -110,10 +110,6 @@ app.get("/profile/:id", (req, res) => {
       }
     })
     .catch((err) => res.status(400).json("Error getting user"));
-
-  // if (!found) {
-  //   res.status(400).json("Not found");
-  // }
 });
 
 app.put("/image", (req, res) => {
@@ -126,17 +122,6 @@ app.put("/image", (req, res) => {
       res.json(entries[0].entries);
     })
     .catch((err) => res.status(400).send("Unable to get entries"));
-  // let found = false;
-  // database.users.forEach((user) => {
-  //   if (user.id === id) {
-  //     found = true;
-  //     user.entries++;
-  //     return res.json(user.entries);
-  //   }
-  // });
-  // if (!found) {
-  //   res.status(400).json("Not found");
-  // }
 });
 
 app.listen(3000, () => {
