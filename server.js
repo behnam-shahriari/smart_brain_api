@@ -42,6 +42,10 @@ app.put("/image", (req, res) => {
   image.handleImage(req, res, db);
 });
 
+app.post("/imageUrl", (req, res) => {
+  image.handleAPICall(req, res);
+});
+
 app.listen(3000, () => {
   console.log("App is running on port 3000");
 });
